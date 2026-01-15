@@ -1,0 +1,26 @@
+# Mac
+.DS_Store
+
+# Archives
+*.zip
+*.tar.gz
+
+# Backup files
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# Spark
+metastore_db/
+spark-warehouse/
+
+# Output directories
+output/
