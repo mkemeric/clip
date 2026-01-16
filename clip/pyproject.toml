@@ -55,7 +55,7 @@ dev = [
 ]
 
 [project.scripts]
-presto-ai = "presto_ai_cli.cli:main"
+presto-ai = "cli:main"
 
 [project.urls]
 Homepage = "https://github.com/yourusername/presto-ai-cli"
@@ -63,9 +63,8 @@ Documentation = "https://github.com/yourusername/presto-ai-cli#readme"
 Repository = "https://github.com/yourusername/presto-ai-cli.git"
 Issues = "https://github.com/yourusername/presto-ai-cli/issues"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["presto_ai_cli*"]
+[tool.setuptools]
+py-modules = ["cli", "config", "llm_client", "notebook", "presto_client", "superset_client"]
 
 [tool.black]
 line-length = 100

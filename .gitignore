@@ -24,3 +24,6 @@ spark-warehouse/
 
 # Output directories
 output/
+
+# config.json contains api keys
+config.json
